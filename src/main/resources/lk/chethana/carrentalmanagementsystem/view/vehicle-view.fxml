@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane fx:id="root" prefHeight="900.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.chethana.carrentalmanagementsystem.controller.VehicleController">
+   <children>
+      <AnchorPane prefHeight="114.0" prefWidth="900.0" styleClass="nav-bar" stylesheets="@../assets/style.css">
+         <children>
+            <Text fill="WHITE" layoutX="216.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VEHICLE SECTION" wrappingWidth="223.73666381835938">
+               <font>
+                  <Font name="System Bold Italic" size="24.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="86.0" fitWidth="90.0" layoutX="41.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons8-vehicles-64%20(1).png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="216.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VEHICLE RENTAL SYSTEM" wrappingWidth="430.9366760253906">
+               <font>
+                  <Font name="System Bold Italic" size="36.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="60.0" fitWidth="77.0" layoutX="748.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons8-back-button-96.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Button layoutX="46.0" layoutY="136.0" mnemonicParsing="false" onAction="#onAddVehicle" prefHeight="104.0" prefWidth="224.0" stylesheets="@../assets/style.css" text="ADD" textFill="WHITE">
+         <styleClass>
+            <String fx:value="main-btn" />
+            <String fx:value="shadow" />
+         </styleClass>
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="616.0" layoutY="136.0" mnemonicParsing="false" onAction="#onDeleteVehicle" prefHeight="104.0" prefWidth="224.0" stylesheets="@../assets/style.css" text="DELETE" textFill="WHITE">
+         <styleClass>
+            <String fx:value="main-btn" />
+            <String fx:value="shadow" />
+         </styleClass>
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="338.0" layoutY="136.0" mnemonicParsing="false" onAction="#onUpdateVehicle" prefHeight="104.0" prefWidth="224.0" stylesheets="@../assets/style.css" text="UPDATE" textFill="WHITE">
+         <styleClass>
+            <String fx:value="main-btn" />
+            <String fx:value="shadow" />
+         </styleClass>
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+      <AnchorPane layoutX="10.0" layoutY="327.0" prefHeight="557.0" prefWidth="882.0" stylesheets="@../assets/style.css">
+         <children>
+            <TableView layoutX="7.0" layoutY="82.0" prefHeight="459.0" prefWidth="864.0">
+              <columns>
+                <TableColumn minWidth="15.0" prefWidth="110.39998817443848" text="VEHCILE TYPE" />
+                <TableColumn prefWidth="157.60003662109375" text="VEHICLE NUMBER" />
+                  <TableColumn minWidth="0.0" prefWidth="138.39996337890625" text="VEHICLE MODEL" />
+                  <TableColumn prefWidth="113.60000610351562" text="VEHICLE COLOR" />
+                  <TableColumn prefWidth="128.800048828125" text="ENGINE TYPE" />
+                  <TableColumn prefWidth="119.20001220703125" text="ENGINE CAPACITY" />
+                  <TableColumn prefWidth="95.9998779296875" text="AVAIALBILITY" />
+              </columns>
+            </TableView>
+            <TextField layoutX="39.0" layoutY="23.0" prefHeight="32.0" prefWidth="284.0" promptText="Search" />
+            <ImageView fitHeight="32.0" fitWidth="34.0" layoutX="7.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons8-search-240%20(1).png" />
+               </image>
+            </ImageView>
+         </children>
+         <styleClass>
+            <String fx:value="lable-view" />
+            <String fx:value="shadow2" />
+         </styleClass>
+      </AnchorPane>
+   </children>
+</AnchorPane>

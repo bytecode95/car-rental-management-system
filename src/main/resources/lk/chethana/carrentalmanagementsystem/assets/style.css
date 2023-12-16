@@ -17,7 +17,14 @@
     -fx-cursor:hand;
 }
 
-.main-btn:hover{
+.other-btn{
+    -fx-background-color:linear-gradient(to bottom, #ba12b3,#d60f69,#9e285e);
+    -fx-background-radius:100;
+    -fx-cursor:hand;
+}
+
+
+.other-btn:hover{
     -fx-background-color:linear-gradient(to bottom, #9e285e,#6f0c6b);
 }
 
@@ -49,4 +56,9 @@
 .lable-view{
     -fx-background-color: #ffffff;
     -fx-background-radius:10px, 10px, 10px, 10px;
+}
+
+.white-bg{
+    -fx-background-color:#fff;
+    -fx-background-radius:8px;
 }
