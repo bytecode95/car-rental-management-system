@@ -5,4 +5,6 @@ module lk.chethana.carrentalmanagementsystem {
 
     opens lk.chethana.carrentalmanagementsystem to javafx.fxml;
     exports lk.chethana.carrentalmanagementsystem;
+    exports lk.chethana.carrentalmanagementsystem.controller;
+    opens lk.chethana.carrentalmanagementsystem.controller to javafx.fxml;
 }

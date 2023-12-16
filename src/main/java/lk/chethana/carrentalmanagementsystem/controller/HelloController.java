@@ -1,4 +1,4 @@
-package lk.chethana.carrentalmanagementsystem;
+package lk.chethana.carrentalmanagementsystem.controller;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
