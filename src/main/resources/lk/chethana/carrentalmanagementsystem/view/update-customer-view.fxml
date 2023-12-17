@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="600.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.chethana.carrentalmanagementsystem.controller.UpdateCustomerController">
+   <children>
+      <AnchorPane fx:id="root" prefHeight="600.0" prefWidth="850.0" styleClass="function-form" stylesheets="@../assets/style.css">
+         <children>
+            <AnchorPane prefHeight="114.0" prefWidth="900.0" styleClass="nav-bar" stylesheets="@../assets/style.css">
+               <children>
+                  <Text fill="WHITE" layoutX="216.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VEHICLE SECTION-UPDATE" wrappingWidth="306.4">
+                     <font>
+                        <Font name="System Bold Italic" size="24.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="216.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VEHICLE RENTAL SYSTEM" wrappingWidth="430.9366760253906">
+                     <font>
+                        <Font name="System Bold Italic" size="36.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="60.0" fitWidth="77.0" layoutX="748.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/icons8-back-button-96.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="90.0" fitWidth="90.0" layoutX="30.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/icons8-users-96.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <TextField fx:id="txtClientName" layoutX="265.0" layoutY="196.0" prefHeight="32.0" prefWidth="306.0" />
+            <TextField fx:id="txtClientAddress" layoutX="265.0" layoutY="253.0" prefHeight="32.0" prefWidth="306.0" />
+            <TextField fx:id="txtClientEmail" layoutX="266.0" layoutY="310.0" prefHeight="32.0" prefWidth="306.0" />
+            <TextField fx:id="txtClientNo" layoutX="266.0" layoutY="369.0" prefHeight="32.0" prefWidth="306.0" />
+            <Button layoutX="183.0" layoutY="485.0" mnemonicParsing="false" onAction="#onUpdate" prefHeight="48.0" prefWidth="166.0" style="-fx-background-color: black;" styleClass="shadow" stylesheets="@../assets/style.css" text="UPDATE" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Text layoutX="38.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CLIENT ID:" wrappingWidth="143.7367172241211">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="38.0" layoutY="218.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CLIENT NAME:" wrappingWidth="143.7367172241211">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="38.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CLIENT ADDRESS:" wrappingWidth="143.7367172241211">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="38.0" layoutY="332.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CLIENT EMAIL:" wrappingWidth="143.7367172241211">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="38.0" layoutY="390.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CLIENT CONTACT NO:" wrappingWidth="166.39999999999998">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <Button layoutX="493.0" layoutY="485.0" mnemonicParsing="false" onAction="#onCancel" prefHeight="48.0" prefWidth="166.0" style="-fx-background-color: black;" styleClass="shadow" stylesheets="@../assets/style.css" text="CANCEL" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <TextField fx:id="txtClientID" layoutX="266.0" layoutY="142.0" prefHeight="32.0" prefWidth="306.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
